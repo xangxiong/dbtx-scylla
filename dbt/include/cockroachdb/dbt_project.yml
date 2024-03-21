@@ -1,0 +1,5 @@
+config-version: 2
+name: dbtx_scylla
+version: 1.0
+
+macro-paths: ["macros"]

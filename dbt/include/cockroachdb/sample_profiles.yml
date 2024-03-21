@@ -1,0 +1,22 @@
+default:
+  outputs:
+
+    dev:
+      type: scylla
+      threads: [1 or more]
+      host: [host]
+      port: [port]
+      user: [dev_username]
+      pass: [dev_password]
+      keyspace: [keyspace_name]
+
+    prod:
+      type: scylla
+      threads: [1 or more]
+      host: [host]
+      port: [port]
+      user: [prod_username]
+      pass: [prod_password]
+      keyspace: [keyspace_name]
+
+  target: dev

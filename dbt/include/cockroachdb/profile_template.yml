@@ -1,0 +1,24 @@
+fixed:
+  type: scylla
+prompts:
+  host:
+    hint: 'hostname for the instance'
+  port:
+    default: 9042
+    type: 'int'
+  user:
+    hint: 'dev username'
+  pass:
+    hint: 'dev password'
+    hide_input: true
+  keyspace:
+    hint: 'default keyspace that dbt will build objects in'
+  threads:
+    hint: '1 or more'
+    type: 'int'
+    default: 1
+  sslmode:
+    hint: 'disable, allow, prefer, require, verify-ca, verify-full'
+    default: 'prefer'
+  sslcert:
+    hint: 'path to local ssl cert'
